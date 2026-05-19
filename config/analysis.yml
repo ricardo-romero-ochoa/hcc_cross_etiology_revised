@@ -1,0 +1,21 @@
+project_name: hcc_cross_etiology_revision
+random_seed: 20260426
+module_sizes: [10, 15, 20, 30, 50]
+primary_module_size: 20
+min_group_n: 10
+run_tcga: true
+run_estimate: true
+run_cibersortx_import: false
+hallmark_species: Homo sapiens
+hallmark_collection: H
+geo_cache_dir: data/raw/GEO
+output_dir: results
+fdr_cutoff: 0.05
+meta_model_primary: fixed
+meta_random_sensitivity: true
+validation_auc_ci: true
+cibersortx:
+  mixture_out: data/external/CIBERSORTx/GSE121248_CIBERSORTx_mixture.txt
+  results_in: data/external/CIBERSORTx/GSE121248_CIBERSORTx_Results.txt
+  use_clr_pca: true
+  n_pcs: 2

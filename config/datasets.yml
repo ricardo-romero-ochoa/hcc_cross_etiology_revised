@@ -1,0 +1,66 @@
+# Cohort registry for the revision pipeline.
+# Tissue labels are parsed using the regular expressions below, then manually auditable
+# in results/tables/curated_metadata_*.tsv.
+
+discovery:
+  - accession: GSE121248
+    role: discovery_hbv_hcc
+    etiology: HBV
+    platform_preferred: GPL570
+    tumor_regex: '(?i)tumou?r|cancer|hcc|primary tumor'
+    nontumor_regex: '(?i)adjacent|non[-_ ]?tumou?r|para[-_ ]?tumou?r|normal'
+  - accession: GSE41804
+    role: discovery_hcv_hcc
+    etiology: HCV
+    platform_preferred: GPL570
+    tumor_regex: '(?i)tumou?r|cancer|hcc'
+    nontumor_regex: '(?i)adjacent|non[-_ ]?tumou?r|normal'
+
+hepatitis_axes:
+  - accession: GSE83148
+    role: hbv_injury_axis
+    etiology: HBV
+    platform_preferred: GPL570
+    notes: 'Derive HBV_INJURY from ALT/AST/HBV-DNA-associated genes when metadata are available.'
+  - accession: GSE38941
+    role: alf_axis
+    etiology: HBV_ALF
+    platform_preferred: GPL570
+    notes: 'Derive ALF program; use patient/block term when repeated fragments are available.'
+
+validation:
+  - accession: GSE14520
+    role: original_external_validation
+    etiology: mixed
+    tumor_regex: '(?i)tumou?r|cancer|hcc'
+    nontumor_regex: '(?i)adjacent|non[-_ ]?tumou?r|normal'
+  - accession: GSE25097
+    role: added_external_validation
+    etiology: mixed
+    tumor_regex: '(?i)tumou?r|cancer|hcc'
+    nontumor_regex: '(?i)adjacent|non[-_ ]?tumou?r|normal|cirrhosis|healthy'
+  - accession: GSE76427
+    role: added_external_validation
+    etiology: mixed
+    tumor_regex: '(?i)tumou?r|cancer|hcc'
+    nontumor_regex: '(?i)adjacent|non[-_ ]?tumou?r|normal'
+  - accession: GSE36376
+    role: added_external_validation
+    etiology: mixed
+    tumor_regex: '(?i)tumou?r|cancer|hcc'
+    nontumor_regex: '(?i)non[-_ ]?tumou?r|adjacent|normal'
+  - accession: GSE57957
+    role: added_external_validation
+    etiology: mixed
+    tumor_regex: '(?i)tumou?r|cancer|hcc'
+    nontumor_regex: '(?i)adjacent|non[-_ ]?tumou?r|normal'
+  - accession: GSE45267
+    role: added_external_validation
+    etiology: mixed
+    tumor_regex: '(?i)tumou?r|cancer|hcc'
+    nontumor_regex: '(?i)non[-_ ]?tumou?r|adjacent|normal'
+  - accession: GSE112790
+    role: added_external_validation_tumor_heavy
+    etiology: mixed
+    tumor_regex: '(?i)tumou?r|cancer|hcc'
+    nontumor_regex: '(?i)adjacent|non[-_ ]?tumou?r|normal'
