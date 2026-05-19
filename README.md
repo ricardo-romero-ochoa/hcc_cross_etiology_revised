@@ -1,4 +1,4 @@
-https://doi.org/10.5281/zenodo.20298127
+[![DOI](https://zenodo.org/badge/1243934990.svg)](https://doi.org/10.5281/zenodo.20298126)
 
 
 # HCC cross-etiology transcriptomic revision pipeline
