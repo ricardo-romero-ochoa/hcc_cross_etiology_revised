@@ -4,7 +4,7 @@ This repository contains the complete reproducible R pipeline for the revised ma
 
 **Cross-etiology transcriptomic conservation in hepatocellular carcinoma reveals opposing proliferation and hepatocyte-loss programs validated across cohorts**
 
-The workflow implements the reviewer-driven revision package: expanded GEO validation, explicit cohort curation, Hallmark GSVA, gene-level meta-analysis with heterogeneity, robust module-score construction, module-size sensitivity analysis, HBV injury-axis derivation, CIBERSORTx-adjusted regression, and TCGA-LIHC Cox modeling.
+The workflow implements a cpmrehensive revision package: expanded GEO validation, explicit cohort curation, Hallmark GSVA, gene-level meta-analysis with heterogeneity, robust module-score construction, module-size sensitivity analysis, HBV injury-axis derivation, CIBERSORTx-adjusted regression, and TCGA-LIHC Cox modeling.
 
 ## Main analyses
 
