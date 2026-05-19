@@ -1,3 +1,6 @@
+https://doi.org/10.5281/zenodo.20298127
+
+
 # HCC cross-etiology transcriptomic revision pipeline
 
 This repository contains the complete reproducible R pipeline for the revised manuscript:
